@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RDF Site Identification Schema",
+  "description": "Renewable Data Framework (RDF) v0.1 – Site Identification Domain. Founded by GoodPower, led by Roger Lopez.",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the site"
+    },
+    "location_point": {
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Geographic coordinates [longitude, latitude]"
+    },
+    "location_geometry": {
+      "type": "object",
+      "description": "GeoJSON geometry object representing site boundary"
+    },
+    "land_use_type": {
+      "type": "string",
+      "description": "Primary land use classification (e.g., agricultural, industrial, brownfield)"
+    },
+    "ownership_type": {
+      "type": "string",
+      "description": "Ownership classification (e.g., private, public, federal)"
+    },
+    "transmission_distance_km": {
+      "type": "number",
+      "description": "Distance to nearest transmission infrastructure in kilometers"
+    },
+    "transmission_capacity_mw": {
+      "type": "number",
+      "description": "Capacity of nearest transmission line in megawatts"
+    },
+    "environmental_overlays": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Environmental constraints or features (e.g., wetlands, protected areas)"
+    },
+    "community_impact_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Quantitative assessment of community impact (0-100)"
+    },
+    "data_source": {
+      "type": "string",
+      "description": "Source of the data (e.g., USGS, county records)"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of last data update"
+    }
+  },
+  "required": ["site_id", "location_point", "land_use_type", "ownership_type"]
+}

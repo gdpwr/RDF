@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "name": "RDF Sample County Sites",
+  "description": "Sample dataset demonstrating RDF v0.1 Site Identification schema. Founded by GoodPower, led by Roger Lopez.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "11111111-1111-1111-1111-111111111111",
+        "land_use_type": "agricultural",
+        "ownership_type": "private",
+        "transmission_distance_km": 2.5,
+        "transmission_capacity_mw": 150,
+        "environmental_overlays": ["wetlands"],
+        "community_impact_score": 78,
+        "data_source": "USGS",
+        "last_updated": "2025-09-24T12:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-118.25, 34.05],
+            [-118.26, 34.05],
+            [-118.26, 34.06],
+            [-118.25, 34.06],
+            [-118.25, 34.05]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "22222222-2222-2222-2222-222222222222",
+        "land_use_type": "brownfield",
+        "ownership_type": "public",
+        "transmission_distance_km": 0.8,
+        "transmission_capacity_mw": 300,
+        "environmental_overlays": ["remediated", "urban"],
+        "community_impact_score": 85,
+        "data_source": "County Records",
+        "last_updated": "2025-09-25T14:30:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-118.30, 34.10],
+            [-118.32, 34.10],
+            [-118.32, 34.12],
+            [-118.30, 34.12],
+            [-118.30, 34.10]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "33333333-3333-3333-3333-333333333333",
+        "land_use_type": "industrial",
+        "ownership_type": "private",
+        "transmission_distance_km": 5.2,
+        "transmission_capacity_mw": 500,
+        "environmental_overlays": ["none"],
+        "community_impact_score": 65,
+        "data_source": "State GIS",
+        "last_updated": "2025-09-26T09:15:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-118.40, 34.15],
+            [-118.42, 34.15],
+            [-118.42, 34.17],
+            [-118.40, 34.17],
+            [-118.40, 34.15]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -12,8 +12,12 @@ datasets/Priority*Counties*.pdf
 datasets/Priority*Counties*.xlsx
 datasets/Priority*Counties*.csv
 
+# Exclude internal tools and scripts
+tools/
+sync_github.sh
+
 # Exclude parsed data
-tools/*_parsed.json
+*_parsed.json
 
 # Python
 __pycache__/

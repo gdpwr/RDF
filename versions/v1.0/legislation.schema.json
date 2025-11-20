@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gdpwr/RDF/schemas/legislation.schema.json",
+  "title": "RDF Legislation & Policy Schema",
+  "description": "Bills, ordinances, jurisdictions, sponsors, and legislative stages affecting renewable energy siting",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["legislation_id", "jurisdiction", "title", "status"],
+  "properties": {
+    "legislation_id": {
+      "type": "string",
+      "description": "Unique legislation identifier (e.g., 'OH-SB52-2021')"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "Geographic jurisdiction (e.g., 'Ohio', 'Adams County, OH')"
+    },
+    "jurisdiction_level": {
+      "type": "string",
+      "enum": ["Federal", "State", "County", "Municipal"],
+      "description": "Level of government"
+    },
+    "title": {
+      "type": "string",
+      "description": "Official title or short description"
+    },
+    "legislation_type": {
+      "type": "string",
+      "enum": [
+        "Bill",
+        "Ordinance",
+        "Resolution",
+        "Regulation",
+        "Executive Order",
+        "Moratorium",
+        "Ban",
+        "Other"
+      ],
+      "description": "Type of legislative action"
+    },
+    "impact_on_renewables": {
+      "type": "string",
+      "enum": ["Supportive", "Restrictive", "Neutral", "Mixed"],
+      "description": "Overall impact on renewable energy development"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Proposed",
+        "In Committee",
+        "Floor Vote Scheduled",
+        "Passed",
+        "Enacted",
+        "Vetoed",
+        "Failed",
+        "Repealed"
+      ],
+      "description": "Current legislative status"
+    },
+    "introduced_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date legislation was introduced"
+    },
+    "enacted_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date legislation was enacted (if passed)"
+    },
+    "effective_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date legislation takes effect"
+    },
+    "expiration_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date legislation expires (e.g., moratorium end date)"
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "party": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["Primary Sponsor", "Co-Sponsor"]
+          }
+        }
+      },
+      "description": "Legislators who sponsored the bill"
+    },
+    "key_provisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key provisions affecting renewable energy"
+    },
+    "setback_requirements": {
+      "type": "object",
+      "properties": {
+        "distance_feet": {
+          "type": "integer"
+        },
+        "from_structure": {
+          "type": "string"
+        }
+      },
+      "description": "Setback requirements (if applicable)"
+    },
+    "veto_power": {
+      "type": "boolean",
+      "description": "Whether local governments can veto projects (e.g., Ohio SB52)"
+    },
+    "data_source": {
+      "type": "string",
+      "description": "Source of the legislation data"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this record was last updated"
+    }
+  }
+}

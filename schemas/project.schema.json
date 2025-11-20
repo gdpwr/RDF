@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gdpwr/RDF/schemas/project.schema.json",
+  "title": "RDF Project Execution Schema",
+  "description": "Project identity, developer, capacity, milestones, and operational status for renewable energy projects",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["project_id", "project_name", "technology_type", "nameplate_capacity_mw", "current_status"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "Unique project identifier (e.g., 'TX-ERCOT-001')"
+    },
+    "project_name": {
+      "type": "string",
+      "description": "Common name of the project (e.g., 'Blue Creek Wind Farm')"
+    },
+    "technology_type": {
+      "type": "string",
+      "enum": ["Solar PV", "Wind", "BESS", "Hybrid", "Other"],
+      "description": "Primary technology type"
+    },
+    "nameplate_capacity_mw": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Total installed capacity in megawatts"
+    },
+    "developer_company": {
+      "type": "string",
+      "description": "Lead developer or project sponsor"
+    },
+    "current_status": {
+      "type": "string",
+      "enum": [
+        "Pre-Development",
+        "Permitting",
+        "Permitted",
+        "Under Construction",
+        "Operational",
+        "Decommissioned",
+        "Canceled",
+        "Withdrawn"
+      ],
+      "description": "Current project stage"
+    },
+    "status_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when current status was reached"
+    },
+    "expected_cod": {
+      "type": "string",
+      "format": "date",
+      "description": "Expected Commercial Operation Date"
+    },
+    "actual_cod": {
+      "type": "string",
+      "format": "date",
+      "description": "Actual Commercial Operation Date (if operational)"
+    },
+    "milestones": {
+      "type": "object",
+      "properties": {
+        "site_control_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "permit_filed_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "permit_approved_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "construction_start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "substantial_completion_date": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "cancellation_reason": {
+      "type": "string",
+      "enum": [
+        "Permit Denied",
+        "Community Opposition",
+        "Interconnection Costs",
+        "Economics",
+        "Developer Decision",
+        "Other"
+      ],
+      "description": "Primary reason if project was canceled"
+    },
+    "data_source": {
+      "type": "string",
+      "description": "Source of the project data"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this record was last updated"
+    }
+  }
+}

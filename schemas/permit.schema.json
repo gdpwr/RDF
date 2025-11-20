@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gdpwr/RDF/schemas/permit.schema.json",
+  "title": "RDF Permitting & Process Schema",
+  "description": "Permit applications, jurisdictions, status, timelines, and approval risk for renewable energy projects",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["permit_id", "project_id", "permit_type", "jurisdiction", "status"],
+  "properties": {
+    "permit_id": {
+      "type": "string",
+      "description": "Unique permit identifier"
+    },
+    "project_id": {
+      "type": "string",
+      "description": "Reference to associated project"
+    },
+    "permit_type": {
+      "type": "string",
+      "enum": [
+        "Zoning",
+        "Conditional Use",
+        "Special Use",
+        "Building",
+        "Environmental",
+        "Utility Interconnection",
+        "Other"
+      ],
+      "description": "Type of permit required"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "Permitting authority (e.g., 'Adams County, Ohio')"
+    },
+    "jurisdiction_level": {
+      "type": "string",
+      "enum": ["Local", "County", "State", "Federal"],
+      "description": "Level of government authority"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pre-Application",
+        "Application Filed",
+        "Under Review",
+        "Public Hearing Scheduled",
+        "Approved",
+        "Approved with Conditions",
+        "Denied",
+        "Appealed",
+        "Withdrawn"
+      ],
+      "description": "Current permit status"
+    },
+    "filed_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date permit application was filed"
+    },
+    "decision_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of approval/denial decision"
+    },
+    "decision_authority": {
+      "type": "string",
+      "description": "Body that made the decision (e.g., 'County Commissioners', 'Zoning Board')"
+    },
+    "public_hearing_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of public hearing (if applicable)"
+    },
+    "timeline_days": {
+      "type": "integer",
+      "description": "Days from filing to decision"
+    },
+    "approval_risk": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High", "Unknown"],
+      "description": "Assessed risk of permit denial"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Conditions attached to approval"
+    },
+    "denial_reason": {
+      "type": "string",
+      "description": "Primary reason for denial (if denied)"
+    },
+    "appeal_status": {
+      "type": "string",
+      "enum": ["Not Appealed", "Appeal Filed", "Appeal Pending", "Appeal Granted", "Appeal Denied"],
+      "description": "Status of any appeals process"
+    },
+    "data_source": {
+      "type": "string",
+      "description": "Source of the permit data"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this record was last updated"
+    }
+  }
+}

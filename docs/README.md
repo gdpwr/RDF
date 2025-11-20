@@ -29,11 +29,19 @@ Enable collaboration, transparency, and acceleration of clean energy deployment 
 
 ---
 
+## 🏗️ Current Status
+**RDF v1.0** is now available with schemas for all 5 core domains:
+- ✅ **Site Identification** → `schemas/site.schema.json`
+- ✅ **Permitting & Process** → `schemas/permit.schema.json`
+- ✅ **Legislation & Policy** → `schemas/legislation.schema.json`
+- ✅ **Project Execution** → `schemas/project.schema.json`
+- ✅ **Community & Opposition Signals** → `schemas/community_signals.schema.json`
+
 ## 📅 Roadmap
-- **2025 Q4** → RDF v0.1 release (Site Identification schema).
-- **2026 H1** → Expand to Permits, Legislation, Projects, Signals.
-- **2026 H2** → Convene RDF Working Group.
-- **2027** → RDF v1.0 public release.
+- **2025 Q4** ✅ RDF v1.0 release (all 5 core domains).
+- **2026 H1** → Add SQL templates for all domains, expand sample datasets.
+- **2026 H2** → Convene RDF Working Group, community adoption.
+- **2027** → RDF v2.0 with advanced domains (interconnection, economics, construction).
 
 ---
 

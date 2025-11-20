@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gdpwr/RDF/schemas/community_signals.schema.json",
+  "title": "RDF Community & Opposition Signals Schema",
+  "description": "Public hearings, lawsuits, protests, organized opposition, and community engagement for renewable energy projects",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["signal_id", "project_id", "signal_type", "date"],
+  "properties": {
+    "signal_id": {
+      "type": "string",
+      "description": "Unique community signal identifier"
+    },
+    "project_id": {
+      "type": "string",
+      "description": "Reference to associated project"
+    },
+    "signal_type": {
+      "type": "string",
+      "enum": [
+        "Public Hearing",
+        "Lawsuit",
+        "Protest",
+        "Opposition Group",
+        "Petition",
+        "Media Coverage",
+        "Public Comment",
+        "Community Meeting",
+        "Other"
+      ],
+      "description": "Type of community signal"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the signal event"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": ["Supportive", "Opposed", "Neutral", "Mixed"],
+      "description": "Overall sentiment toward the project"
+    },
+    "organized_opposition": {
+      "type": "boolean",
+      "description": "Whether opposition is organized (group/campaign)"
+    },
+    "opposition_group_name": {
+      "type": "string",
+      "description": "Name of opposition organization (if applicable)"
+    },
+    "petition_signatures": {
+      "type": "integer",
+      "description": "Number of petition signatures (if applicable)"
+    },
+    "hearing_details": {
+      "type": "object",
+      "properties": {
+        "attendance": {
+          "type": "integer",
+          "description": "Number of attendees"
+        },
+        "speakers_for": {
+          "type": "integer",
+          "description": "Number of speakers in favor"
+        },
+        "speakers_against": {
+          "type": "integer",
+          "description": "Number of speakers opposed"
+        },
+        "duration_hours": {
+          "type": "number",
+          "description": "Length of hearing"
+        }
+      },
+      "description": "Details from public hearing"
+    },
+    "lawsuit_details": {
+      "type": "object",
+      "properties": {
+        "plaintiff": {
+          "type": "string"
+        },
+        "defendant": {
+          "type": "string"
+        },
+        "case_number": {
+          "type": "string"
+        },
+        "court": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Filed", "Pending", "Settled", "Dismissed", "Ruled for Plaintiff", "Ruled for Defendant"]
+        },
+        "grounds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Lawsuit information (if applicable)"
+    },
+    "primary_concerns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Visual Impact",
+          "Property Values",
+          "Noise",
+          "Health Concerns",
+          "Environmental Impact",
+          "Wildlife/Birds",
+          "Flicker",
+          "Traffic",
+          "Agricultural Land Use",
+          "Other"
+        ]
+      },
+      "description": "Key concerns raised by community"
+    },
+    "disinformation_present": {
+      "type": "boolean",
+      "description": "Whether disinformation was identified"
+    },
+    "disinformation_examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Examples of disinformation (if present)"
+    },
+    "media_coverage": {
+      "type": "object",
+      "properties": {
+        "outlet": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tone": {
+          "type": "string",
+          "enum": ["Positive", "Negative", "Neutral", "Balanced"]
+        }
+      },
+      "description": "Media coverage details (if applicable)"
+    },
+    "data_source": {
+      "type": "string",
+      "description": "Source of the community signal data"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this record was last updated"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "signal_id": "TX-ERCOT-001-SIG-001",
+    "project_id": "TX-ERCOT-001",
+    "signal_type": "Public Hearing",
+    "date": "2023-10-15",
+    "sentiment": "Mixed",
+    "organized_opposition": false,
+    "opposition_group_name": null,
+    "petition_signatures": null,
+    "hearing_details": {
+      "attendance": 85,
+      "speakers_for": 12,
+      "speakers_against": 18,
+      "duration_hours": 3.5
+    },
+    "lawsuit_details": null,
+    "primary_concerns": [
+      "Visual Impact",
+      "Property Values",
+      "Agricultural Land Use"
+    ],
+    "disinformation_present": false,
+    "disinformation_examples": null,
+    "media_coverage": {
+      "outlet": "Example County Times",
+      "headline": "Solar Farm Hearing Draws Large Crowd, Mixed Reactions",
+      "url": "https://example.com/solar-hearing",
+      "tone": "Balanced"
+    },
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "signal_id": "OH-PJM-002-SIG-001",
+    "project_id": "OH-PJM-002",
+    "signal_type": "Opposition Group",
+    "date": "2023-03-20",
+    "sentiment": "Opposed",
+    "organized_opposition": true,
+    "opposition_group_name": "Sample County Coalition Against Industrial Wind",
+    "petition_signatures": 1250,
+    "hearing_details": null,
+    "lawsuit_details": null,
+    "primary_concerns": [
+      "Health Concerns",
+      "Noise",
+      "Property Values",
+      "Visual Impact",
+      "Flicker"
+    ],
+    "disinformation_present": true,
+    "disinformation_examples": [
+      "Turbines cause cancer",
+      "Property values drop 50%",
+      "Infrasound health effects"
+    ],
+    "media_coverage": {
+      "outlet": "Sample News Network",
+      "headline": "Residents Rally Against Proposed Wind Farm",
+      "url": "https://example.com/wind-opposition",
+      "tone": "Negative"
+    },
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "signal_id": "OH-PJM-002-SIG-002",
+    "project_id": "OH-PJM-002",
+    "signal_type": "Lawsuit",
+    "date": "2024-09-25",
+    "sentiment": "Opposed",
+    "organized_opposition": true,
+    "opposition_group_name": "Sample County Coalition Against Industrial Wind",
+    "petition_signatures": null,
+    "hearing_details": null,
+    "lawsuit_details": {
+      "plaintiff": "Sample County Coalition Against Industrial Wind",
+      "defendant": "Example Wind Energy Corp",
+      "case_number": "2024-CV-12345",
+      "court": "Sample County Court of Common Pleas",
+      "status": "Filed",
+      "grounds": [
+        "NEPA violations",
+        "Inadequate environmental review",
+        "Procedural irregularities"
+      ]
+    },
+    "primary_concerns": [
+      "Environmental Impact",
+      "Wildlife/Birds"
+    ],
+    "disinformation_present": false,
+    "disinformation_examples": null,
+    "media_coverage": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "signal_id": "CA-CAISO-003-SIG-001",
+    "project_id": "CA-CAISO-003",
+    "signal_type": "Public Comment",
+    "date": "2023-05-20",
+    "sentiment": "Supportive",
+    "organized_opposition": false,
+    "opposition_group_name": null,
+    "petition_signatures": null,
+    "hearing_details": {
+      "attendance": 45,
+      "speakers_for": 28,
+      "speakers_against": 5,
+      "duration_hours": 2.0
+    },
+    "lawsuit_details": null,
+    "primary_concerns": [
+      "Traffic"
+    ],
+    "disinformation_present": false,
+    "disinformation_examples": null,
+    "media_coverage": {
+      "outlet": "Demo County Gazette",
+      "headline": "Battery Storage Project Receives Community Support",
+      "url": "https://example.com/battery-support",
+      "tone": "Positive"
+    },
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "signal_id": "NY-NYISO-004-SIG-001",
+    "project_id": "NY-NYISO-004",
+    "signal_type": "Community Meeting",
+    "date": "2024-08-10",
+    "sentiment": "Mixed",
+    "organized_opposition": false,
+    "opposition_group_name": null,
+    "petition_signatures": null,
+    "hearing_details": {
+      "attendance": 120,
+      "speakers_for": 35,
+      "speakers_against": 42,
+      "duration_hours": 4.0
+    },
+    "lawsuit_details": null,
+    "primary_concerns": [
+      "Visual Impact",
+      "Environmental Impact",
+      "Property Values"
+    ],
+    "disinformation_present": false,
+    "disinformation_examples": null,
+    "media_coverage": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  }
+]

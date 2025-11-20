@@ -1,0 +1,120 @@
+[
+  {
+    "legislation_id": "OH-SB-52-2021",
+    "jurisdiction": "Ohio",
+    "jurisdiction_level": "State",
+    "title": "Energy Generation Facility Siting - County Authority",
+    "legislation_type": "Bill",
+    "impact_on_renewables": "Restrictive",
+    "status": "Enacted",
+    "introduced_date": "2021-03-15",
+    "enacted_date": "2021-12-22",
+    "effective_date": "2021-12-22",
+    "expiration_date": null,
+    "sponsors": [
+      {
+        "name": "John Doe",
+        "party": "Republican",
+        "role": "Primary Sponsor"
+      },
+      {
+        "name": "Jane Smith",
+        "party": "Republican",
+        "role": "Co-Sponsor"
+      }
+    ],
+    "key_provisions": [
+      "Counties can prohibit wind/solar projects",
+      "Developers must obtain county approval",
+      "Replaces state-level siting authority"
+    ],
+    "setback_requirements": {
+      "distance_feet": 1320,
+      "from_structure": "Property lines and residences"
+    },
+    "veto_power": true,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "legislation_id": "CA-AB-1139-2021",
+    "jurisdiction": "California",
+    "jurisdiction_level": "State",
+    "title": "Solar Energy Systems - Local Ordinances",
+    "legislation_type": "Bill",
+    "impact_on_renewables": "Supportive",
+    "status": "Enacted",
+    "introduced_date": "2021-02-19",
+    "enacted_date": "2021-09-23",
+    "effective_date": "2022-01-01",
+    "expiration_date": null,
+    "sponsors": [
+      {
+        "name": "Alice Johnson",
+        "party": "Democrat",
+        "role": "Primary Sponsor"
+      }
+    ],
+    "key_provisions": [
+      "Streamlines local permitting",
+      "Limits restrictions on residential solar",
+      "Prohibits discriminatory fees"
+    ],
+    "setback_requirements": null,
+    "veto_power": false,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "legislation_id": "EXAMPLE-COUNTY-ORD-2024-15",
+    "jurisdiction": "Example County, Texas",
+    "jurisdiction_level": "County",
+    "title": "Temporary Moratorium on Large-Scale Solar Projects",
+    "legislation_type": "Moratorium",
+    "impact_on_renewables": "Restrictive",
+    "status": "Enacted",
+    "introduced_date": "2024-01-10",
+    "enacted_date": "2024-02-05",
+    "effective_date": "2024-02-05",
+    "expiration_date": "2025-02-05",
+    "sponsors": null,
+    "key_provisions": [
+      "12-month pause on solar project approvals",
+      "Study period for updated zoning regulations",
+      "Existing applications grandfathered"
+    ],
+    "setback_requirements": null,
+    "veto_power": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "legislation_id": "NY-94C-2020",
+    "jurisdiction": "New York",
+    "jurisdiction_level": "State",
+    "title": "Accelerated Renewable Energy Growth - Office of Renewable Energy Siting",
+    "legislation_type": "Bill",
+    "impact_on_renewables": "Supportive",
+    "status": "Enacted",
+    "introduced_date": "2020-01-08",
+    "enacted_date": "2020-04-03",
+    "effective_date": "2020-05-01",
+    "expiration_date": null,
+    "sponsors": [
+      {
+        "name": "Robert Williams",
+        "party": "Democrat",
+        "role": "Primary Sponsor"
+      }
+    ],
+    "key_provisions": [
+      "Creates state-level renewable energy siting office",
+      "Can override local laws if unreasonably burdensome",
+      "Streamlines large project approvals (25+ MW)"
+    ],
+    "setback_requirements": null,
+    "veto_power": false,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  }
+]

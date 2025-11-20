@@ -1,0 +1,86 @@
+[
+  {
+    "project_id": "TX-ERCOT-001",
+    "project_name": "Sunrise Solar Farm",
+    "technology_type": "Solar PV",
+    "nameplate_capacity_mw": 150,
+    "developer_company": "Example Solar Development LLC",
+    "current_status": "Under Construction",
+    "status_date": "2024-06-15",
+    "expected_cod": "2025-03-01",
+    "actual_cod": null,
+    "milestones": {
+      "site_control_date": "2022-08-10",
+      "permit_filed_date": "2023-02-15",
+      "permit_approved_date": "2023-11-20",
+      "construction_start_date": "2024-06-15",
+      "substantial_completion_date": null
+    },
+    "cancellation_reason": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "project_id": "OH-PJM-002",
+    "project_name": "Blue Creek Wind Farm",
+    "technology_type": "Wind",
+    "nameplate_capacity_mw": 300,
+    "developer_company": "Example Wind Energy Corp",
+    "current_status": "Canceled",
+    "status_date": "2024-09-10",
+    "expected_cod": null,
+    "actual_cod": null,
+    "milestones": {
+      "site_control_date": "2021-05-20",
+      "permit_filed_date": "2022-09-01",
+      "permit_approved_date": null,
+      "construction_start_date": null,
+      "substantial_completion_date": null
+    },
+    "cancellation_reason": "Community Opposition",
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "project_id": "CA-CAISO-003",
+    "project_name": "Valley Storage Project",
+    "technology_type": "BESS",
+    "nameplate_capacity_mw": 200,
+    "developer_company": "Example Energy Storage Inc",
+    "current_status": "Operational",
+    "status_date": "2024-08-01",
+    "expected_cod": "2024-08-01",
+    "actual_cod": "2024-08-15",
+    "milestones": {
+      "site_control_date": "2022-01-15",
+      "permit_filed_date": "2022-11-10",
+      "permit_approved_date": "2023-06-25",
+      "construction_start_date": "2023-10-01",
+      "substantial_completion_date": "2024-07-20"
+    },
+    "cancellation_reason": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  },
+  {
+    "project_id": "NY-NYISO-004",
+    "project_name": "Empire Hybrid Energy",
+    "technology_type": "Hybrid",
+    "nameplate_capacity_mw": 250,
+    "developer_company": "Example Renewable Partners",
+    "current_status": "Permitting",
+    "status_date": "2024-03-01",
+    "expected_cod": "2026-12-01",
+    "actual_cod": null,
+    "milestones": {
+      "site_control_date": "2023-06-01",
+      "permit_filed_date": "2024-03-01",
+      "permit_approved_date": null,
+      "construction_start_date": null,
+      "substantial_completion_date": null
+    },
+    "cancellation_reason": null,
+    "data_source": "Sample Data",
+    "last_updated": "2024-11-20T10:00:00Z"
+  }
+]

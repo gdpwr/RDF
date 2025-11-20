@@ -5,6 +5,13 @@ docs/DEEP_RESEARCH_BRIEF.md
 docs/ARMY_PROJECT_REVIEW.md
 docs/RDF_V1_ENHANCED_SCHEMA.md
 
+# Exclude proprietary datasets (GoodPower internal data)
+datasets/ACP_*.csv
+datasets/ANCHOR_*.xlsx
+datasets/Priority*Counties*.pdf
+datasets/Priority*Counties*.xlsx
+datasets/Priority*Counties*.csv
+
 # Exclude parsed data
 tools/*_parsed.json
 

@@ -1,8 +1,6 @@
 # AUTHORS
 
-## Founders
-- **GoodPower** – Founding Organization
-- **Roger Lopez** – Chief Growth & Data Officer, Convener & Lead Architect of RDF
+
 
 ## Early Contributors
 (*to be expanded as working group forms*)
